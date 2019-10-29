@@ -1,5 +1,4 @@
 //- Стандартный шаблон страницы
-include mixins.pug
 
 doctype html
 html(class='page no-js', lang='ru')
@@ -25,7 +24,7 @@ html(class='page no-js', lang='ru')
     //- meta(name='apple-mobile-web-app-status-bar-style', content='#000')
 
     block meta
-      title Название сайта
+      title ТЗ LF-Academy
 
     block head
       link(rel='stylesheet', href='css/style.min.css')
@@ -35,16 +34,12 @@ html(class='page no-js', lang='ru')
   body
     noscript У вас отключен JavaScript. Это пугает.
 
-    .page-container
-      block header
-
-      main.page-main
+    main.page-main
+      .page-container
         block content
           p Cодержимое
 
-      block footer
-
     block page-bottom
       //- script(src='js/vendors.min.js')
-      //- script(src='js/script.min.js')
+      script(src='js/script.min.js')
       //- script(src='js/bundle.js')
